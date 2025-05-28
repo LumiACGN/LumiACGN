@@ -1,4 +1,4 @@
-## Hi there 👋
+## 🌸路弥·墨染樱
 
 <!--
 **LumiACGN/LumiACGN** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
@@ -16,3 +16,4 @@ Here are some ideas to get you started:
 -->
 
 <h1 align="center"> <a href="https://sunguoqi.com/"> <img src="https://readme-typing-svg.herokuapp.com/?lines=我永远喜欢二次元&center=true&size=27"> </a> </h1>
+<div align="center"> <img src="https://metrics.lecoq.io/LumiACGN?template=classic&config.timezone=Asia%2FShanghai"> </div>
