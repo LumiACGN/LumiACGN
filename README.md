@@ -16,4 +16,6 @@ Here are some ideas to get you started:
 -->
 
 <h1 align="center"> <a href="https://sunguoqi.com/"> <img src="https://readme-typing-svg.herokuapp.com/?lines=我永远喜欢二次元&center=true&size=27"> </a> </h1>
-![](http://antzuhl.cn:4000/get/@LumiACGN)
+<!-- ![](http://antzuhl.cn:4000/get/@LumiACGN) -->
+
+![info](https://github-readme-stats.vercel.app/api?username=LumiACGN&show_icons=true&count_private=true&hide=prs&theme=default_repocard)
