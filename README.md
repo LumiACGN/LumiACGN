@@ -29,11 +29,16 @@ Here are some ideas to get you started:
   <!-- for beauty 留个空行好看点 -->
   <div>&nbsp;</div>
 
-  <!-- profile logo 个人资料徽标 -->
   <div>
-    <!-- visitor -->
-    <img src="https://komarev.com/ghpvc/?username=LumiACGN&label=Views&color=orange&style=flat" alt="访问量统计" />&emsp;
+    <a href="https://count.getloli.com" target="_blank">
+      <img alt="Moe Counter!" src="https://count.getloli.com/@LumiACGN.github?name=LumiACGN.github&theme=booru-yuyuyui&padding=7&offset=0&align=top&scale=1&pixelated=1&darkmode=auto">
+    </a>
   </div>
+</div>
+<div align="center">
+
+  ![info](https://github-readme-stats.vercel.app/api?username=LumiACGN)
+  [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=LumiACGN&layout=compact)](https://github.com/anuraghazra/github-readme-stats)
 
   <!-- Snake Code Contribution Map 贪吃蛇代码贡献图 -->
   <picture>
@@ -41,5 +46,4 @@ Here are some ideas to get you started:
     <source media="(prefers-color-scheme: light)" srcset="https://cdn.jsdelivr.net/gh/sun0225SUN/sun0225SUN/profile-snake-contrib/github-contribution-grid-snake.svg" />
     <img alt="github-snake" src="https://cdn.jsdelivr.net/gh/sun0225SUN/sun0225SUN/profile-snake-contrib/github-contribution-grid-snake-dark.svg" />
   </picture>
-
 </div>
