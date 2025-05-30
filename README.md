@@ -22,6 +22,9 @@ Here are some ideas to get you started:
   [![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&width=435&lines=我知道的最温暖的一个字是爱;两个字是动漫;三个字是二次元&center=true&size=27)](https://git.io/typing-svg)
 
   <!-- 图片 -->
+  <picture>
+    <img src="/assets/images/sankarea.jpg" width="408" height="288" />
+  </picture>
 
   <!-- for beauty 留个空行好看点 -->
   <div>&nbsp;</div>
