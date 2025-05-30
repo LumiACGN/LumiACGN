@@ -82,6 +82,19 @@ Here are some ideas to get you started:
           </picture>
         </a>
       </td>
+      <td colspan="3" align="center">
+        <a href="https://github.com/anuraghazra/github-readme-stats">
+          <picture>
+            <source
+              srcset="https://stats.justsong.cn/api/github?username=LumiACGN&theme=buefy"
+              media="(prefers-color-scheme: dark)" />
+            <source
+              srcset="https://stats.justsong.cn/api/github?username=LumiACGN&theme=buefy"
+              media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)" />
+            <img src="https://stats.justsong.cn/api/github?username=LumiACGN&theme=buefy" height="100%" />
+          </picture>
+        </a>
+      </td>
     </tr>
     <tr>
       <td colspan="6" align="center">
