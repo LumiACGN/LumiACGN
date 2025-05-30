@@ -39,13 +39,75 @@ Here are some ideas to get you started:
   <div>&nbsp;</div>
   <div>&nbsp;</div>
 
-  ![info](https://github-readme-stats.vercel.app/api?username=LumiACGN)
-  [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=LumiACGN&layout=compact)](https://github.com/anuraghazra/github-readme-stats)
-
-  <!-- Snake Code Contribution Map 贪吃蛇代码贡献图 -->
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/sun0225SUN/sun0225SUN/profile-snake-contrib/github-contribution-grid-snake-dark.svg" />
-    <source media="(prefers-color-scheme: light)" srcset="https://cdn.jsdelivr.net/gh/sun0225SUN/sun0225SUN/profile-snake-contrib/github-contribution-grid-snake.svg" />
-    <img alt="github-snake" src="https://cdn.jsdelivr.net/gh/sun0225SUN/sun0225SUN/profile-snake-contrib/github-contribution-grid-snake-dark.svg" />
-  </picture>
+  <table width="100%" align="center">
+    <tr>
+      <td colspan="3" align="center">
+        <a href="https://github.com/anuraghazra/github-readme-stats">
+          <picture>
+            <source
+              srcset="https://github-readme-stats.vercel.app/api?username=LumiACGN&show_icons=true&hide_border=true&count_private=true&include_all_commits=true&number_format=long&bg_color=00000000&theme=dark"
+              media="(prefers-color-scheme: dark)" />
+            <source
+              srcset="https://github-readme-stats.vercel.app/api?username=LumiACGN&show_icons=true&hide_border=true&count_private=true&include_all_commits=true&number_format=long&bg_color=00000000"
+              media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)" />
+            <img src="https://github-readme-stats.vercel.app/api?username=LumiACGN&show_icons=true&hide_border=true&count_private=true&include_all_commits=true&number_format=long" height="100%" />
+          </picture>
+        </a>
+      </td>
+      <td colspan="3" align="center">
+        <a href="https://github.com/denvercoder1/github-readme-streak-stats">
+          <picture>
+            <source
+              srcset="https://github-readme-streak-stats-mirror.vercel.app/?user=LumiACGN&mode=weekly&hide_border=true&background=00000000&theme=dark"
+              media="(prefers-color-scheme: dark)" />
+            <source
+              srcset="https://github-readme-streak-stats-mirror.vercel.app/?user=LumiACGN&mode=weekly&hide_border=true&background=00000000"
+              media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)" />
+            <img src="https://github-readme-streak-stats-mirror.vercel.app/?user=LumiACGN&mode=weekly&hide_border=true" height="100%" />
+          </picture>
+        </a>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="3" align="center">
+        <a href="https://github.com/anuraghazra/github-readme-stats">
+          <picture>
+            <source
+              srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=LumiACGN&layout=compact&show_icons=true&hide_border=true&count_private=true&include_all_commits=true&number_format=long&bg_color=00000000&theme=dark"
+              media="(prefers-color-scheme: dark)" />
+            <source
+              srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=LumiACGN&layout=compact&show_icons=true&hide_border=true&count_private=true&include_all_commits=true&number_format=long&bg_color=00000000"
+              media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)" />
+            <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=LumiACGN&layout=compact&show_icons=true&hide_border=true&count_private=true&include_all_commits=true&number_format=long" height="100%" />
+          </picture>
+        </a>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="6" align="center">
+        <a href="https://github.com/ryo-ma/github-profile-trophy">
+          <picture>
+            <source
+              srcset="https://github-profile-trophy.vercel.app/?username=LumiACGN&column=7&row=1&margin-w=8&no-bg=true&no-frame=true&theme=onedark"
+              media="(prefers-color-scheme: dark)" />
+            <source
+              srcset="https://github-profile-trophy.vercel.app/?username=LumiACGN&column=7&row=1&margin-w=8&no-bg=true&no-frame=true"
+              media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)" />
+            <img src="https://github-profile-trophy.vercel.app/?username=LumiACGN&column=7&row=1&margin-w=8&no-bg=true&no-frame=true" width="100%" />
+          </picture>
+        </a>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="6" align="center">
+        <a href="https://github.com/ryo-ma/github-profile-trophy">
+          <picture>
+            <source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/sun0225SUN/sun0225SUN/profile-snake-contrib/github-contribution-grid-snake-dark.svg" />
+            <source media="(prefers-color-scheme: light)" srcset="https://cdn.jsdelivr.net/gh/sun0225SUN/sun0225SUN/profile-snake-contrib/github-contribution-grid-snake.svg" />
+            <img alt="github-snake" src="https://cdn.jsdelivr.net/gh/sun0225SUN/sun0225SUN/profile-snake-contrib/github-contribution-grid-snake-dark.svg" />
+          </picture>
+        </a>
+      </td>
+    </tr>
+  </table>
 </div>
