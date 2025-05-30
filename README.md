@@ -1,5 +1,4 @@
-## 🌸路弥·墨染樱
-
+## 路弥🌸墨染樱
 <!--
 **LumiACGN/LumiACGN** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
@@ -26,7 +25,6 @@ Here are some ideas to get you started:
     <img src="/assets/images/sankarea.jpg" width="408" height="288" />
   </picture>
 
-  <!-- for beauty 留个空行好看点 -->
   <div>&nbsp;</div>
 
   <div>
@@ -36,6 +34,9 @@ Here are some ideas to get you started:
   </div>
 </div>
 <div align="center">
+
+  <div>&nbsp;</div>
+  <div>&nbsp;</div>
 
   ![info](https://github-readme-stats.vercel.app/api?username=LumiACGN)
   [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=LumiACGN&layout=compact)](https://github.com/anuraghazra/github-readme-stats)
