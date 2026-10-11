@@ -1,0 +1,88 @@
+# SPDX-FileCopyrightText: 2026 LumiACGN
+# SPDX-License-Identifier: MIT
+name: update profile cards
+
+on:
+  schedule:
+    # UTC 23 20 * * * -> 北京时间次日 04:23（与 snake 错峰，避开整点）
+    - cron: "23 20 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: profile-cards
+  cancel-in-progress: false
+
+jobs:
+  cards:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v7
+
+      - name: Stats card (light)
+        id: stats_light
+        uses: readme-tools/github-readme-stats-action@v2
+        with:
+          card: stats
+          path: profile/stats-light.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+          fail_on_error: "true"
+          options: "username=LumiACGN&locale=cn&hide_border=true&hide_rank=true&show_icons=true&number_format=long&disable_animations=true&bg_color=00000000&theme=catppuccin_latte&title_color=c9629a&icon_color=d479ab&text_color=4c4452"
+
+      - name: Stats card (dark)
+        id: stats_dark
+        uses: readme-tools/github-readme-stats-action@v2
+        with:
+          card: stats
+          path: profile/stats-dark.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+          fail_on_error: "true"
+          options: "username=LumiACGN&locale=cn&hide_border=true&hide_rank=true&show_icons=true&number_format=long&disable_animations=true&bg_color=00000000&theme=catppuccin_mocha&title_color=f5c2e7&icon_color=cba6f7&text_color=cdd6f4"
+
+      - name: Streak card (light)
+        id: streak_light
+        uses: DenverCoder1/github-readme-streak-stats@v1
+        with:
+          path: profile/streak-light.svg
+          options: "user=LumiACGN&locale=zh_Hans&mode=weekly&hide_border=true&background=00000000&theme=default&stroke=d479ab&ring=c9629a&fire=e0559f&currStreakNum=26242f&sideNums=4c4452&currStreakLabel=b8548a&sideLabels=7a7590&dates=9a93a8"
+
+      - name: Streak card (dark)
+        id: streak_dark
+        uses: DenverCoder1/github-readme-streak-stats@v1
+        with:
+          path: profile/streak-dark.svg
+          options: "user=LumiACGN&locale=zh_Hans&mode=weekly&hide_border=true&background=00000000&theme=dark&stroke=f5c2e7&ring=f5c2e7&fire=eba0ac&currStreakNum=f7f0f7&sideNums=cdd6f4&currStreakLabel=f5c2e7&sideLabels=a6adc8&dates=7f849c"
+
+      - name: Validate cards
+        run: |
+          set -euo pipefail
+          for f in profile/stats-light.svg profile/stats-dark.svg profile/streak-light.svg profile/streak-dark.svg; do
+            test -s "$f" || { echo "::error::$f missing or empty"; exit 1; }
+            grep -q "<svg" "$f" || { echo "::error::$f is not an SVG"; exit 1; }
+            echo "$f ok ($(wc -c < "$f") bytes)"
+          done
+          test -z '${{ steps.stats_light.outputs.error_type }}' || { echo "::error::stats light card error"; exit 1; }
+          test -z '${{ steps.stats_dark.outputs.error_type }}' || { echo "::error::stats dark card error"; exit 1; }
+
+      - name: Commit and push cards
+        run: |
+          set -euo pipefail
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -- profile
+          if git diff --cached --quiet; then
+            echo "cards unchanged; nothing to commit"
+            exit 0
+          fi
+          git commit -m "chore(profile): refresh generated cards"
+          for i in 1 2 3; do
+            if git push; then echo "pushed"; exit 0; fi
+            echo "push rejected (attempt $i); rebasing"
+            git pull --rebase --autostash origin main
+          done
+          echo "::error::push failed after 3 attempts"
+          exit 1
