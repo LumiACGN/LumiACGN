@@ -43,8 +43,8 @@
     <line x1="330" y1="330" x2="405" y2="330" stroke="#f5c2e7" stroke-opacity=".4" stroke-width="1.5"/>
     <use href="#petal" fill="#f8b8d0" transform="translate(430,331) rotate(10) scale(0.6)" opacity=".85"/>
     <line x1="455" y1="330" x2="530" y2="330" stroke="#f5c2e7" stroke-opacity=".4" stroke-width="1.5"/>
-    <text x="430" y="386" font-size="27" fill="#f7f0f7" text-anchor="middle"><tspan>决定现在无聊与否，快乐与否，平凡与否</tspan></text>
-    <text x="430" y="432" font-size="27" fill="#f7f0f7" text-anchor="middle"><tspan>的不是现实，是我来决定的。</tspan></text>
+    <text x="430" y="386" font-size="27" fill="#f7f0f7" text-anchor="middle"><tspan>决定现在无聊与否，快乐与否，平凡与否的</tspan></text>
+    <text x="430" y="432" font-size="27" fill="#f7f0f7" text-anchor="middle"><tspan>不是现实，是我来决定的。</tspan></text>
     <use href="#petal" fill="#fbd3e6" transform="translate(96,180) rotate(40) scale(0.6)" opacity=".85"/>
     <use href="#petal" fill="#eeb5d6" transform="translate(760,150) rotate(-20) scale(0.55)" opacity=".85"/>
     <use href="#petal" fill="#f5c2e7" transform="translate(110,400) rotate(-55) scale(0.5)" opacity=".85"/>
