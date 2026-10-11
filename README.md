@@ -51,12 +51,12 @@
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="./profile/stats-dark.svg">
   <source media="(prefers-color-scheme: light)" srcset="./profile/stats-light.svg">
-  <img src="./profile/stats-light.svg" alt="GitHub 统计" width="49%">
+  <img src="./profile/stats-light.svg" alt="GitHub 统计" width="36%">
 </picture>
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="./profile/streak-dark.svg">
   <source media="(prefers-color-scheme: light)" srcset="./profile/streak-light.svg">
-  <img src="./profile/streak-light.svg" alt="连续贡献" width="49%">
+  <img src="./profile/streak-light.svg" alt="连续贡献" width="61%">
 </picture>
 
 <div>&nbsp;</div>
@@ -80,6 +80,6 @@
 <div>&nbsp;</div>
 <div>&nbsp;</div>
 
-<sub>墨染樱下，与君初见 🌸</sub>
+<sub>未曾初恋，却已失恋。</sub>
 
 </div>
