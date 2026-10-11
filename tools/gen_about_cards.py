@@ -83,6 +83,33 @@ def petal_use(p, x, y, rot, s, ci, op='.85'):
     col = [p['pink'], p['pink2'], p['pink3'], p['pink4']][ci]
     return f'<use href="#petal" fill="{col}" transform="translate({x},{y}) rotate({rot}) scale({s})" opacity="{op}"/>'
 
+def fall_petal(p, x0, y0, xm, ym, xe, ye, dur, begin, ra, rb, s, ci, op='.85'):
+    # 飘落花瓣：SMIL 循环；静态 transform=动画中点（不跑动画的渲染器也能看到合理构图）
+    col = [p['pink'], p['pink2'], p['pink3'], p['pink4']][ci]
+    return (f'<g transform="translate({xm},{ym})">'
+            f'<animateTransform attributeName="transform" type="translate" calcMode="spline" keyTimes="0;0.5;1" '
+            f'keySplines="0.42 0 0.58 1;0.42 0 0.58 1" values="{x0},{y0}; {xm},{ym}; {xe},{ye}" '
+            f'dur="{dur}s" begin="-{begin}s" repeatCount="indefinite"/>'
+            f'<g transform="rotate(0)">'
+            f'<animateTransform attributeName="transform" type="rotate" values="0;{ra};{rb}" '
+            f'dur="{dur*0.5:.1f}s" begin="-{begin}s" repeatCount="indefinite"/>'
+            f'<use href="#petal" fill="{col}" transform="scale({s})" opacity="{op}"/></g></g>')
+
+# 各卡的飘落车道：(x0,y0, xm,ym, xe,ye, dur, begin, 转角A, 转角B, 缩放, 颜色序号)
+FALL_RULE6 = [(128, -30, 105, 230, 88, 510, 13, 2, 30, -12, .7, 1),
+              (640, -30, 615, 215, 596, 510, 15, 6, -26, 18, .62, 2),
+              (700, -30, 680, 250, 664, 510, 17, 10, 24, -16, .55, 3),
+              (68, -30, 50, 220, 36, 510, 14, 4, -20, 12, .6, 0)]
+FALL_QUOTES = [(150, -30, 128, 225, 112, 510, 13, 3, 26, -14, .7, 2),
+               (720, -30, 698, 230, 682, 510, 15, 8, -24, 16, .62, 1),
+               (790, -30, 772, 240, 758, 510, 16, 5, 22, -18, .55, 3),
+               (70, -30, 52, 230, 40, 510, 14, 11, -18, 10, .6, 0)]
+FALL_RULE20 = [(120, -40, 96, 500, 78, 1090, 20, 3, 30, -14, .7, 1),
+               (660, -40, 640, 480, 624, 1090, 23, 9, -26, 16, .6, 2),
+               (700, -40, 684, 520, 670, 1090, 26, 14, 22, -18, .55, 3),
+               (60, -40, 44, 490, 30, 1090, 22, 6, -20, 12, .62, 0),
+               (390, -40, 374, 500, 360, 1090, 24, 17, 24, -12, .5, 2)]
+
 def tline(x, y, spans, size, fill, anchor='middle', ls=0):
     inner = ''.join((f'<tspan fill="{f}">{t}</tspan>' if f else f'<tspan>{t}</tspan>') for t, f in spans)
     a = ' text-anchor="middle"' if anchor == 'middle' else ''
@@ -119,6 +146,8 @@ def card_rule6(theme):
     b64 = subset_b64('「」勇者部六条' + ''.join(a + b for a, b in RULE6))
     body = []
     body.append(f'<circle cx="380" cy="70" r="260" fill="url(#glow)"/>')
+    for args in FALL_RULE6:
+        body.append(fall_petal(p, *args))
     body.append(f'<line x1="150" y1="92" x2="240" y2="92" stroke="{p["pink"]}" stroke-opacity=".45" stroke-width="1.5"/>')
     body.append(f'<line x1="520" y1="92" x2="610" y2="92" stroke="{p["pink"]}" stroke-opacity=".45" stroke-width="1.5"/>')
     body.append(petal_use(p, 132, 92, 60, .55, 1) + petal_use(p, 628, 92, -30, .55, 2))
@@ -141,6 +170,8 @@ def card_quotes(theme):
     b64 = subset_b64(''.join(QUOTE_A) + ''.join(QUOTE_B))
     body = []
     body.append(f'<circle cx="430" cy="90" r="280" fill="url(#glow)"/>')
+    for args in FALL_QUOTES:
+        body.append(fall_petal(p, *args))
     for ang in range(0, 360, 72):
         body.append(f'<g transform="translate(430,74) rotate({ang})"><use href="#petal" fill="{p["pink2"]}" transform="translate(0,-11) rotate(180) scale(.5)" opacity=".9"/></g>')
     body.append(f'<circle cx="430" cy="74" r="3.5" fill="{p["pink"]}"/>')
@@ -170,6 +201,8 @@ def card_rule20(theme):
     b64 = subset_b64('「」妹控二十条' + ''.join(RULE20) + ''.join(chr(0x2460 + i) for i in range(20)))
     body = []
     body.append(f'<circle cx="390" cy="210" r="300" fill="url(#glow)"/>')
+    for args in FALL_RULE20:
+        body.append(fall_petal(p, *args))
     for ybar in (26, 982):
         body.append(f'<rect x="70" y="{ybar}" width="640" height="18" rx="9" fill="{p["roller"]}"/>')
         body.append(f'<circle cx="70" cy="{ybar+9}" r="14" fill="{p["knob"]}"/><circle cx="70" cy="{ybar+9}" r="6" fill="{p["knob_in"]}"/>')
