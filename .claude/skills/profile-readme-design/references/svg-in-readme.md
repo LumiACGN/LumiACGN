@@ -14,7 +14,7 @@
   - 其他分支的文件（如 output 分支的蛇）**不能**用相对路径（相对路径永远指向默认分支），必须用 `raw.githubusercontent.com` 绝对 URL。
 - `<picture>` 的兜底 `<img>` 必须与 light 版 source 内容一致。
 - **typing-svg 的 `lines` 含非 ASCII（中文）时必须百分号编码**：服务端拒绝 URL 中的裸 UTF-8 字节（HTTP 400，2026-10-11 实测，连少量中文也会 400）。旧 URL 可能靠 camo 缓存存活着，缓存过期即裂图——遇到打字机裂图先检查这一点。
-- **统计卡自带 CSS 入场动画**（元素基态 `opacity:0` + `fadein ... forwards`，延迟最长约 1.9s）：streak 卡在 cards.yml 里带了 `disable_animations=true`（静止渲染即全量显示，截图/无动画环境也完整）；stats 卡不支持该参数（正常浏览器不受影响）。遇到"卡片看起来是空的"先想想是不是动画基态。
+- **统计卡自带 CSS 入场动画**（元素基态 `opacity:0` + `fadein ... forwards`，延迟最长约 1.9s）：streak 卡在 cards.yml 里带了 `disable_animations=true`（静止渲染即全量显示，截图/无动画环境也完整）；stats 卡的 `disable_animations` 是把动画时长清零（`* {animation-duration:0s}`），浏览器里即时全显，但其显隐走 CSS 类（`.stagger{opacity:0}`）——**rsvg 不解析 CSS 类，静态预览里 stats 行永远不可见，此为正常现象**，验证 stats 卡务必用 firefox。遇到"卡片看起来是空的"先想想是不是动画基态。
 - **自制打字/逐字动画技法**（stage 卡在用）：clipPath 里放 rect，对 `width` 做 `<animate attributeName="width">`；**base 宽度设为全文宽**——不跑动画的渲染器（rsvg/部分客户端）显示全文，浏览器由动画接管。多行序列动画共用同一 `dur` + `repeatCount="indefinite"` 即自动同步循环（打字→保持→整组淡出→重来）。**截图验证动画相位**：复制一份、给所有相关 `<animate>` 加负 `begin`（如 `begin="-4s"`）即可把画面固定到想要的时刻。
 
 ## 字体子集（霞鹜文楷）

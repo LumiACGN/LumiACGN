@@ -57,6 +57,20 @@ jobs:
           path: profile/streak-dark.svg
           options: "user=LumiACGN&locale=zh_Hans&mode=weekly&hide_border=true&background=00000000&theme=dark&stroke=f5c2e7&ring=f5c2e7&fire=eba0ac&currStreakNum=f7f0f7&sideNums=cdd6f4&currStreakLabel=f5c2e7&sideLabels=a6adc8&dates=7f849c&disable_animations=true"
 
+      - name: Trim stats cards (crop empty right area)
+        run: |
+          set -euo pipefail
+          python3 - <<'PY'
+          import re
+          for p in ('profile/stats-light.svg', 'profile/stats-dark.svg'):
+              s = open(p).read()
+              s2 = re.sub(r'(<svg[^>]*?viewBox=")0 0 [\d.]+ 195(")', r'\g<1>0 0 292 195\g<2>', s, count=1)
+              s2 = re.sub(r'(<svg[^>]*?width=")[\d.]+(")', r'\g<1>292\g<2>', s2, count=1)
+              assert s2 != s, p
+              open(p, 'w').write(s2)
+              print('trimmed', p)
+          PY
+
       - name: Validate cards
         run: |
           set -euo pipefail
