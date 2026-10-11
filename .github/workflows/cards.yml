@@ -48,14 +48,14 @@ jobs:
         uses: DenverCoder1/github-readme-streak-stats@v1
         with:
           path: profile/streak-light.svg
-          options: "user=LumiACGN&locale=zh_Hans&mode=weekly&hide_border=true&background=00000000&theme=default&stroke=d479ab&ring=c9629a&fire=e0559f&currStreakNum=26242f&sideNums=4c4452&currStreakLabel=b8548a&sideLabels=7a7590&dates=9a93a8"
+          options: "user=LumiACGN&locale=zh_Hans&mode=weekly&hide_border=true&background=00000000&theme=default&stroke=d479ab&ring=c9629a&fire=e0559f&currStreakNum=26242f&sideNums=4c4452&currStreakLabel=b8548a&sideLabels=7a7590&dates=9a93a8&disable_animations=true"
 
       - name: Streak card (dark)
         id: streak_dark
         uses: DenverCoder1/github-readme-streak-stats@v1
         with:
           path: profile/streak-dark.svg
-          options: "user=LumiACGN&locale=zh_Hans&mode=weekly&hide_border=true&background=00000000&theme=dark&stroke=f5c2e7&ring=f5c2e7&fire=eba0ac&currStreakNum=f7f0f7&sideNums=cdd6f4&currStreakLabel=f5c2e7&sideLabels=a6adc8&dates=7f849c"
+          options: "user=LumiACGN&locale=zh_Hans&mode=weekly&hide_border=true&background=00000000&theme=dark&stroke=f5c2e7&ring=f5c2e7&fire=eba0ac&currStreakNum=f7f0f7&sideNums=cdd6f4&currStreakLabel=f5c2e7&sideLabels=a6adc8&dates=7f849c&disable_animations=true"
 
       - name: Validate cards
         run: |
