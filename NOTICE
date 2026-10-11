@@ -1,0 +1,18 @@
+本仓库包含的第三方组件与资源：
+
+1. LXGW WenKai Screen / 霞鹜文楷 屏幕阅读版（字体子集，以 base64 内嵌于 assets/hero-dark.svg、assets/hero-light.svg）
+   来源：https://github.com/lxgw/LxgwWenKai
+   作者：LXGW（落霞孤鹜）
+   许可证：SIL Open Font License 1.1
+
+2. GitHub Readme Stats（profile/stats-*.svg 的生成工具）
+   来源：https://github.com/anuraghazra/github-readme-stats
+   许可证：MIT
+
+3. GitHub Readme Streak Stats（profile/streak-*.svg 的生成工具）
+   来源：https://github.com/DenverCoder1/github-readme-streak-stats
+   许可证：MIT
+
+4. Platane/snk（贡献图贪吃蛇 SVG 的生成工具，输出在 output 分支）
+   来源：https://github.com/Platane/snk
+   许可证：MIT
