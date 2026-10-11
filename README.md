@@ -74,7 +74,7 @@
 
 <!-- ⑦ 徽章 -->
 <a href="https://github.com/LumiACGN"><img src="https://img.shields.io/badge/GitHub-LumiACGN-d479ab?style=flat-square&labelColor=26242f&logo=github&logoColor=white" alt="GitHub"></a>
-<img src="https://komarev.com/ghpvc/?username=LumiACGN&label=Visitors&color=d479ab&style=flat-square" alt="Visitors">
+<img src="https://hits.sh/github.com/LumiACGN.svg?label=Visitors&color=d479ab&labelColor=26242f&style=flat-square" alt="Visitors">
 <img src="https://img.shields.io/badge/二次元-🌸-f5c2e7?style=flat-square&labelColor=26242f" alt="二次元">
 
 <div>&nbsp;</div>

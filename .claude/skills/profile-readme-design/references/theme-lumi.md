@@ -36,7 +36,7 @@
 2. **世界観卡**（`assets/stage-{dark,light}.svg`，1200×540）：礼弥图（base64 内嵌，生成时经 magick 压到 1000px/q86）+ 自制打字题词（SMIL clipPath 宽度动画，三句循环）；由 `tools/gen_stage_cards.py` 生成。**typing-svg 第三方服务已移除**（2026-10-11）
 3. stats + streak 卡（`<picture>` 双份，`./profile/*.svg`）：stats 卡右侧空白由 cards.yml 的 Trim 步骤裁掉（约 418→292），显示宽度 stats 36% / streak 61%（同 1.25 倍缩放、等高对齐，中缝不再空）
 4. 贪吃蛇（`<picture>` 双份，raw 绝对 URL 指 output 分支）
-5. 徽章行（shields 静态徽章 + komarev 计数，统一 `style=flat-square` 与樱粉色系）
+5. 徽章行（shields 静态徽章 + **hits.sh** 计数，统一 `style=flat-square` + `labelColor=26242f` + 樱粉色系）。计数服务 2026-10-11 从 komarev 换成 hits.sh：komarev 响应 1~3s，camo 偶发超时导致裂图；hits.sh 实测 ~0.2s（快约 10 倍）
 6. 「关于我」——三块内容卡（SVG，明暗双版，由 `tools/gen_about_cards.py` 生成，改文案后重跑脚本会自动重新子集化字体并输出两版）：
    - `assets/rule6-{dark,light}.svg` 勇者部六条（平铺卡片，侧边花纹线）
    - `assets/quotes-{dark,light}.svg` 两段句子（花瓣花饰 + 花瓣分隔）
