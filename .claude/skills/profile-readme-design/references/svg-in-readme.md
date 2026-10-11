@@ -14,6 +14,7 @@
   - 其他分支的文件（如 output 分支的蛇）**不能**用相对路径（相对路径永远指向默认分支），必须用 `raw.githubusercontent.com` 绝对 URL。
 - `<picture>` 的兜底 `<img>` 必须与 light 版 source 内容一致。
 - **typing-svg 的 `lines` 含非 ASCII（中文）时必须百分号编码**：服务端拒绝 URL 中的裸 UTF-8 字节（HTTP 400，2026-10-11 实测，连少量中文也会 400）。旧 URL 可能靠 camo 缓存存活着，缓存过期即裂图——遇到打字机裂图先检查这一点。
+- **统计卡自带 CSS 入场动画**（元素基态 `opacity:0` + `fadein ... forwards`，延迟最长约 1.9s）：streak 卡在 cards.yml 里带了 `disable_animations=true`（静止渲染即全量显示，截图/无动画环境也完整）；stats 卡不支持该参数（正常浏览器不受影响）。遇到"卡片看起来是空的"先想想是不是动画基态。
 
 ## 字体子集（霞鹜文楷）
 
