@@ -1,0 +1,121 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 300" width="1200" height="300">
+  <title>路弥 · 墨染樱</title>
+  <desc>Artwork (c) 2026 LumiACGN. Embedded font subset: LXGW WenKai Screen (SIL OFL 1.1, https://github.com/lxgw/LxgwWenKai).</desc>
+  <defs>
+    <style>
+      @font-face{font-family:"LXGW WenKai Hero";src:url(data:font/ttf;base64,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) format("truetype");}
+      text{font-family:"LXGW WenKai Hero","LXGW WenKai Screen","LXGW WenKai","Noto Sans CJK SC",sans-serif;}
+    </style>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1d1c27"/>
+      <stop offset=".55" stop-color="#171622"/>
+      <stop offset="1" stop-color="#11101a"/>
+    </linearGradient>
+    <radialGradient id="moonGlow" cx=".5" cy=".5" r=".5">
+      <stop offset="0" stop-color="#f5c2e7" stop-opacity=".34"/>
+      <stop offset=".55" stop-color="#f5c2e7" stop-opacity=".10"/>
+      <stop offset="1" stop-color="#f5c2e7" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="titlePink" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#fad2ec"/>
+      <stop offset=".5" stop-color="#f5c2e7"/>
+      <stop offset="1" stop-color="#eaa9d6"/>
+    </linearGradient>
+    <path id="petal" d="M0,10 C-6,6 -9,1 -8,-4 C-7.4,-8 -3.5,-9.5 -1.6,-6.8 C-1,-5.6 1,-5.6 1.6,-6.8 C3.5,-9.5 7.4,-8 8,-4 C9,1 6,6 0,10 Z"/>
+  </defs>
+
+  <rect width="1200" height="300" fill="url(#bg)"/>
+
+  <!-- 月与光晕 -->
+  <circle cx="948" cy="112" r="230" fill="url(#moonGlow)"/>
+  <circle cx="948" cy="112" r="64" fill="#f5c2e7" opacity=".15"/>
+  <circle cx="948" cy="112" r="55" fill="#fbd8ee" opacity=".22"/>
+
+  <!-- 墨痕 -->
+  <path d="M-20,120 C 220,100 430,146 660,112 C 880,82 1030,130 1220,104 L1220,128 C 1030,150 880,104 660,134 C 430,168 220,124 -20,146 Z" fill="#262535" opacity=".55"/>
+  <path d="M-20,214 C 180,186 420,246 640,206 C 830,172 1010,236 1220,202 L1220,240 C 1010,270 830,208 640,242 C 420,280 180,222 -20,252 Z" fill="#2a2938" opacity=".5"/>
+  <ellipse cx="150" cy="236" rx="26" ry="3" fill="#31304a" opacity=".5"/>
+  <ellipse cx="1050" cy="178" rx="34" ry="3.5" fill="#31304a" opacity=".45"/>
+  <ellipse cx="420" cy="86" rx="18" ry="2.4" fill="#31304a" opacity=".4"/>
+
+  <!-- 樱枝 -->
+  <path d="M1210,16 C 1160,22 1105,36 1052,54" stroke="#3d3c50" stroke-width="11" fill="none" stroke-linecap="round"/>
+  <path d="M1072,46 C 1014,66 964,86 924,112" stroke="#3d3c50" stroke-width="7.5" fill="none" stroke-linecap="round"/>
+  <path d="M944,102 C 906,120 872,140 848,162" stroke="#3d3c50" stroke-width="4.5" fill="none" stroke-linecap="round"/>
+  <path d="M1006,58 C 986,64 968,76 958,92" stroke="#3b3a4e" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M898,122 C 880,128 866,138 858,150" stroke="#3b3a4e" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+
+  <!-- 枝上花簇 -->
+  <g opacity=".95">
+    <use href="#petal" fill="#f5c2e7" transform="translate(1044,52) rotate(24) scale(1.15)"/>
+    <use href="#petal" fill="#f8b8d0" transform="translate(1060,64) rotate(96) scale(1)"/>
+    <use href="#petal" fill="#fbd3e6" transform="translate(1030,66) rotate(-40) scale(.9)"/>
+    <use href="#petal" fill="#eeb5d6" transform="translate(956,88) rotate(160) scale(1.05)"/>
+    <use href="#petal" fill="#f5c2e7" transform="translate(972,74) rotate(60) scale(.9)"/>
+    <use href="#petal" fill="#fbd3e6" transform="translate(862,146) rotate(-20) scale(.95)"/>
+    <use href="#petal" fill="#f8b8d0" transform="translate(842,166) rotate(40) scale(.85)"/>
+    <use href="#petal" fill="#f5c2e7" transform="translate(918,116) rotate(140) scale(.9)"/>
+    <use href="#petal" fill="#f8b8d0" transform="translate(1002,60) rotate(200) scale(.8)"/>
+    <use href="#petal" fill="#fbd3e6" transform="translate(1112,38) rotate(120) scale(1.1)"/>
+    <use href="#petal" fill="#f8b8d0" transform="translate(1096,26) rotate(-60) scale(.9)"/>
+    <use href="#petal" fill="#f5c2e7" transform="translate(988,58) rotate(10) scale(.95)"/>
+  </g>
+
+  <!-- 飘落樱花（SMIL 循环；静态 transform 为动画中点，供不支持动画的渲染器查看） -->
+  <g transform="translate(612,130)">
+    <animateTransform attributeName="transform" type="translate" calcMode="spline" keyTimes="0;0.5;1" keySplines="0.42 0 0.58 1;0.42 0 0.58 1" values="640,-40; 612,130; 585,340" dur="14s" begin="-2s" repeatCount="indefinite"/>
+    <g transform="rotate(0)">
+      <animateTransform attributeName="transform" type="rotate" values="0;35;-10" dur="7s" begin="-2s" repeatCount="indefinite"/>
+      <use href="#petal" fill="#f5c2e7" transform="scale(.75)"/>
+    </g>
+  </g>
+  <g transform="translate(742,140)">
+    <animateTransform attributeName="transform" type="translate" calcMode="spline" keyTimes="0;0.5;1" keySplines="0.42 0 0.58 1;0.42 0 0.58 1" values="780,-40; 742,140; 705,340" dur="17s" begin="-9s" repeatCount="indefinite"/>
+    <g transform="rotate(0)">
+      <animateTransform attributeName="transform" type="rotate" values="0;-30;20" dur="8s" begin="-9s" repeatCount="indefinite"/>
+      <use href="#petal" fill="#fbd3e6" transform="scale(.65)"/>
+    </g>
+  </g>
+  <g transform="translate(505,120)">
+    <animateTransform attributeName="transform" type="translate" calcMode="spline" keyTimes="0;0.5;1" keySplines="0.42 0 0.58 1;0.42 0 0.58 1" values="530,-40; 505,120; 478,340" dur="12.5s" begin="-5s" repeatCount="indefinite"/>
+    <g transform="rotate(0)">
+      <animateTransform attributeName="transform" type="rotate" values="0;24;-16" dur="6.5s" begin="-5s" repeatCount="indefinite"/>
+      <use href="#petal" fill="#f8b8d0" transform="scale(.6)"/>
+    </g>
+  </g>
+  <g transform="translate(830,150)">
+    <animateTransform attributeName="transform" type="translate" calcMode="spline" keyTimes="0;0.5;1" keySplines="0.42 0 0.58 1;0.42 0 0.58 1" values="860,-40; 830,150; 800,340" dur="15s" begin="-12s" repeatCount="indefinite"/>
+    <g transform="rotate(0)">
+      <animateTransform attributeName="transform" type="rotate" values="0;-22;14" dur="7.5s" begin="-12s" repeatCount="indefinite"/>
+      <use href="#petal" fill="#eeb5d6" transform="scale(.6)"/>
+    </g>
+  </g>
+  <g transform="translate(575,110)">
+    <animateTransform attributeName="transform" type="translate" calcMode="spline" keyTimes="0;0.5;1" keySplines="0.42 0 0.58 1;0.42 0 0.58 1" values="600,-40; 575,110; 555,340" dur="18s" begin="-1s" repeatCount="indefinite"/>
+    <g transform="rotate(0)">
+      <animateTransform attributeName="transform" type="rotate" values="0;40;-12" dur="9s" begin="-1s" repeatCount="indefinite"/>
+      <use href="#petal" fill="#fbd3e6" transform="scale(.55)"/>
+    </g>
+  </g>
+  <g transform="translate(900,140)">
+    <animateTransform attributeName="transform" type="translate" calcMode="spline" keyTimes="0;0.5;1" keySplines="0.42 0 0.58 1;0.42 0 0.58 1" values="930,-40; 900,140; 872,340" dur="13s" begin="-7s" repeatCount="indefinite"/>
+    <g transform="rotate(0)">
+      <animateTransform attributeName="transform" type="rotate" values="0;-36;10" dur="6s" begin="-7s" repeatCount="indefinite"/>
+      <use href="#petal" fill="#f5c2e7" transform="scale(.7)"/>
+    </g>
+  </g>
+
+  <!-- 静置花瓣（构图点缀） -->
+  <use href="#petal" fill="#f5c2e7" opacity=".7" transform="translate(700,232) rotate(-8) scale(.7)"/>
+  <use href="#petal" fill="#eeb5d6" opacity=".75" transform="translate(822,214) rotate(120) scale(.55)"/>
+  <use href="#petal" fill="#fbd3e6" opacity=".6" transform="translate(560,190) rotate(30) scale(.5)"/>
+
+  <!-- 标题 -->
+  <text x="96" y="170" font-size="84" fill="#f7f0f7" letter-spacing="6">路弥</text>
+  <text x="292" y="170" font-size="84" fill="url(#titlePink)" letter-spacing="6">墨染樱</text>
+  <path d="M100,196 C 200,188 300,204 410,196 C 510,189 600,202 672,194" stroke="#f5c2e7" stroke-width="3" fill="none" stroke-linecap="round" opacity=".85"/>
+  <use href="#petal" fill="#f5c2e7" transform="translate(684,192) rotate(70) scale(.7)"/>
+
+  <!-- 副标题 -->
+  <text x="100" y="244" font-size="21" fill="#a6adc8" letter-spacing="7">LumiACGN · 世界第一妹控 · 二次元</text>
+</svg>
