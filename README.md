@@ -26,14 +26,30 @@
 <div>&nbsp;</div>
 <div>&nbsp;</div>
 
-<!-- ④ 关于我 -->
+<!-- ④ 关于我：三块内容卡（勇者部六条 / 喜欢的句子 / 妹控二十条） -->
 ### 🌸 关于我
 
-路弥 ·「墨染樱」<br>
-世界第一妹控（自称，谢绝反驳）——妹妹是这世上最珍贵的存在<br>
-给妹妹的六条：见面要好好打招呼；不轻易放弃；按时吃好睡好；烦恼就一起商量；努力过，办法总会出现；别逞强，也要让自己幸福<br>
-不是坚持看番，是必须喜欢上二次元才行——最爱《散华礼弥》，虚构的人生，也有它确切的意义<br>
-信条：不幸之后是幸福。月亮升起时，我的独角戏准时开演 🌙
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/rule6-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="./assets/rule6-light.svg">
+  <img src="./assets/rule6-light.svg" alt="勇者部六条" width="100%">
+</picture>
+
+<div>&nbsp;</div>
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/quotes-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="./assets/quotes-light.svg">
+  <img src="./assets/quotes-light.svg" alt="喜欢的句子" width="100%">
+</picture>
+
+<div>&nbsp;</div>
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/rule20-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="./assets/rule20-light.svg">
+  <img src="./assets/rule20-light.svg" alt="妹控二十条" width="100%">
+</picture>
 
 <div>&nbsp;</div>
 <div>&nbsp;</div>
