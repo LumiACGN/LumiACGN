@@ -38,7 +38,11 @@
 4. stats + streak 卡（`<picture>` 双份，`./profile/*.svg`，宽约 49%）
 5. 贪吃蛇（`<picture>` 双份，raw 绝对 URL 指 output 分支）
 6. 徽章行（shields 静态徽章 + komarev 计数，统一 `style=flat-square` 与樱粉色系）
-7. 「关于我」文字块（中文，简短；文案在 README 里直接改）
+7. 「关于我」——三块内容卡（SVG，明暗双版，由 `tools/gen_about_cards.py` 生成，改文案后重跑脚本会自动重新子集化字体并输出两版）：
+   - `assets/rule6-{dark,light}.svg` 勇者部六条（平铺卡片，侧边花纹线）
+   - `assets/quotes-{dark,light}.svg` 两段句子（花瓣花饰 + 花瓣分隔）
+   - `assets/rule20-{dark,light}.svg` 妹控二十条（挂轴样式，圈码 ①-⑳ + 「妹」印章）
+   - 文案源在生成脚本顶部的 RULE6 / QUOTE_A / QUOTE_B / RULE20 常量里；生成器的外框 rect 必须 `fill="none"`（不透明填充会盖住整块内容——踩过坑）
 8. 页脚小字
 
 保留文案：typing 三句（我知道的最温暖的一个字是爱 / 两个字是动漫 / 三个字是二次元）；副标题（LumiACGN · 世界第一妹控 · 二次元）。
