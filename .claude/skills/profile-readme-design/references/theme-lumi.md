@@ -33,16 +33,15 @@
 自上而下（全部居中，间距用空 `<div>&nbsp;</div>`）：
 
 1. hero 横幅（`<picture>` 双份，相对路径）
-2. typing-svg（明暗双 URL：暗 `color=f5c2e7`、浅 `color=d16d9e`，`background=00000000`）
-3. `assets/images/sankarea.jpg`（408×288 装饰图，不随主题切换）
-4. stats + streak 卡（`<picture>` 双份，`./profile/*.svg`，宽约 49%）
-5. 贪吃蛇（`<picture>` 双份，raw 绝对 URL 指 output 分支）
-6. 徽章行（shields 静态徽章 + komarev 计数，统一 `style=flat-square` 与樱粉色系）
-7. 「关于我」——三块内容卡（SVG，明暗双版，由 `tools/gen_about_cards.py` 生成，改文案后重跑脚本会自动重新子集化字体并输出两版）：
+2. **世界観卡**（`assets/stage-{dark,light}.svg`，1200×540）：礼弥图（base64 内嵌，生成时经 magick 压到 1000px/q86）+ 自制打字题词（SMIL clipPath 宽度动画，三句循环）；由 `tools/gen_stage_cards.py` 生成。**typing-svg 第三方服务已移除**（2026-10-11）
+3. stats + streak 卡（`<picture>` 双份，`./profile/*.svg`，宽约 49%）
+4. 贪吃蛇（`<picture>` 双份，raw 绝对 URL 指 output 分支）
+5. 徽章行（shields 静态徽章 + komarev 计数，统一 `style=flat-square` 与樱粉色系）
+6. 「关于我」——三块内容卡（SVG，明暗双版，由 `tools/gen_about_cards.py` 生成，改文案后重跑脚本会自动重新子集化字体并输出两版）：
    - `assets/rule6-{dark,light}.svg` 勇者部六条（平铺卡片，侧边花纹线）
    - `assets/quotes-{dark,light}.svg` 两段句子（花瓣花饰 + 花瓣分隔）
    - `assets/rule20-{dark,light}.svg` 妹控二十条（挂轴样式，圈码 ①-⑳ + 「妹」印章）
    - 文案源在生成脚本顶部的 RULE6 / QUOTE_A / QUOTE_B / RULE20 常量里；生成器的外框 rect 必须 `fill="none"`（不透明填充会盖住整块内容——踩过坑）
-8. 页脚小字
+7. 页脚小字
 
 保留文案：typing 三句（我知道的最温暖的一个字是爱 / 两个字是动漫 / 三个字是二次元）；副标题（LumiACGN · 世界第一妹控 · 二次元）。
