@@ -12,9 +12,9 @@
 
 <!-- ② 打字机（明/暗两种配色） -->
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://readme-typing-svg.demolab.com?font=Fira+Code&size=27&pause=1000&width=435&center=true&background=00000000&color=F5C2E7&lines=我知道的最温暖的一个字是爱;两个字是动漫;三个字是二次元">
-  <source media="(prefers-color-scheme: light)" srcset="https://readme-typing-svg.demolab.com?font=Fira+Code&size=27&pause=1000&width=435&center=true&background=00000000&color=D16D9E&lines=我知道的最温暖的一个字是爱;两个字是动漫;三个字是二次元">
-  <img alt="打字机" src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=27&pause=1000&width=435&center=true&background=00000000&color=D16D9E&lines=我知道的最温暖的一个字是爱;两个字是动漫;三个字是二次元">
+  <source media="(prefers-color-scheme: dark)" srcset="https://readme-typing-svg.demolab.com?font=Fira+Code&size=27&pause=1000&width=435&center=true&background=00000000&color=F5C2E7&lines=%E6%88%91%E7%9F%A5%E9%81%93%E7%9A%84%E6%9C%80%E6%B8%A9%E6%9A%96%E7%9A%84%E4%B8%80%E4%B8%AA%E5%AD%97%E6%98%AF%E7%88%B1;%E4%B8%A4%E4%B8%AA%E5%AD%97%E6%98%AF%E5%8A%A8%E6%BC%AB;%E4%B8%89%E4%B8%AA%E5%AD%97%E6%98%AF%E4%BA%8C%E6%AC%A1%E5%85%83">
+  <source media="(prefers-color-scheme: light)" srcset="https://readme-typing-svg.demolab.com?font=Fira+Code&size=27&pause=1000&width=435&center=true&background=00000000&color=D16D9E&lines=%E6%88%91%E7%9F%A5%E9%81%93%E7%9A%84%E6%9C%80%E6%B8%A9%E6%9A%96%E7%9A%84%E4%B8%80%E4%B8%AA%E5%AD%97%E6%98%AF%E7%88%B1;%E4%B8%A4%E4%B8%AA%E5%AD%97%E6%98%AF%E5%8A%A8%E6%BC%AB;%E4%B8%89%E4%B8%AA%E5%AD%97%E6%98%AF%E4%BA%8C%E6%AC%A1%E5%85%83">
+  <img alt="打字机" src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=27&pause=1000&width=435&center=true&background=00000000&color=D16D9E&lines=%E6%88%91%E7%9F%A5%E9%81%93%E7%9A%84%E6%9C%80%E6%B8%A9%E6%9A%96%E7%9A%84%E4%B8%80%E4%B8%AA%E5%AD%97%E6%98%AF%E7%88%B1;%E4%B8%A4%E4%B8%AA%E5%AD%97%E6%98%AF%E5%8A%A8%E6%BC%AB;%E4%B8%89%E4%B8%AA%E5%AD%97%E6%98%AF%E4%BA%8C%E6%AC%A1%E5%85%83">
 </picture>
 
 <div>&nbsp;</div>
